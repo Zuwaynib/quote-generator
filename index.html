@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Random Quote Generator</title>
+</head>
+<body>
+    <div class="container">
+            <h2>Quote of the Day</h2>
+            <div class="quote">
+                <i class='bx bxs-quote-alt-left'></i>
+                <p id="quote-text">The child is the father of the man</p>
+                <i class='bx bxs-quote-alt-right' ></i>
+                <div class="author">
+                    <span> &mdash; </span>
+                    <p id="author-name">Joe Black</p>
+                </div>
+            </div>
+            <div class="border"></div>
+            <div class="features">
+                    <ul>
+                        <li class="sound" onclick="addSound()"><i class='bx bx-volume-full' ></i></li>
+                        <li class="copy" onclick="copy()"><i class='bx bx-copy-alt' ></i></li>
+                        <li class="twitter" onclick="twitter()"><svg width="24" height="24" viewBox="0 0 1200 1227" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="currentColor"/>
+                        </svg></li>
+                    </ul>
+                <button onclick="generateQuote()" id="quote-button">New Quote</button>
+            </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+     
